@@ -4,7 +4,7 @@ public class Program {
 
         a = 4;
         b = 3;
-        System.out.println(Numero.dividir(a,b) + "\n");
+        System.out.println(Numero.dividir(a,b));
 
         a = 9;
         b = 0;
