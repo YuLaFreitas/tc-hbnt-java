@@ -1,12 +1,15 @@
 public class Numero {
 
-	 public static int dividir(int a, int b){
-        int resultado = 0;
+	 public static String dividir(int a, int b){
+        String resultado = "";
+        int r = 0;
         try{
-            resultado = a/b;
+            r = a/b;
 
         }catch (Exception e){
-            System.out.printf("Não é possivel dividir por zero \n %d / %d = 0", a, b);
+            resultado = "Não é possivel dividir por zero \n";
+        }finally {
+            resultado += a + " / " + b + " = " + r;
         }
 
          return resultado;
