@@ -6,9 +6,9 @@ public class Numero {
         try{
             r = a/b;
         }catch (Exception e){
-            resultado = "Não é possivel dividir por zero \n";
+            resultado = "Não eh possivel dividir por zero \n";
         }finally {
-            resultado += a + " / " + b + " = " + r + "/n";
+            resultado += a + " / " + b + " = " + r + "\n";
         }
          return resultado;
     }
