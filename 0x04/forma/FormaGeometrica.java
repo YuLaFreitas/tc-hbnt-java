@@ -1,7 +1,7 @@
 public class FormaGeometrica extends RuntimeException{
     public double area() {
 
-      throw new UnsupportedOperationException("Funcao Area nao implementada");
+      throw new UnsupportedOperationException("Funcao area nao implementada");
 
     }
 }
