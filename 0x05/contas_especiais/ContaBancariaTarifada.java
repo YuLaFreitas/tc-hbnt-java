@@ -1,6 +1,6 @@
 import exceptions.OperacaoInvalidaException;
 
-public class ContaBancariaTarifada extends  ContaBancariaBasica {
+public class ContaBancariaTarifada extends ContaBancariaBasica{
     private int quantidadeTransacoes; // quantidade de transações efetudas na conta, seja saque o depósito.
 
     public ContaBancariaTarifada(String numeracao, double taxaJurosAnual) {
