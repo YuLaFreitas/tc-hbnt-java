@@ -1,10 +1,11 @@
 public class Departamento {
 
     public double valorMeta;
-    public double valorAtigidoMeta;
+    public double valorAtingidoMeta;
 
-    public Departamento(double valorMeta, double valorAtigidoMeta) {
-        setValorAtigindoMeta(valorAtigidoMeta);
+
+    public Departamento(double valorMeta, double valorAtingidoMeta) {
+        setValorAtigindoMeta(valorAtingidoMeta);
         setValorMeta(valorMeta);
     }
 
@@ -12,8 +13,8 @@ public class Departamento {
         return valorMeta;
     }
 
-    public double getValorAtigidoMeta() {
-        return valorAtigidoMeta;
+    public double getValorAtingidoMeta() {
+        return valorAtingidoMeta;
     }
 
     public void setValorMeta(double valorMeta) {
@@ -21,10 +22,10 @@ public class Departamento {
     }
 
     public void setValorAtigindoMeta(double valorAtigidoMeta) {
-        this.valorAtigidoMeta = valorAtigidoMeta;
+        this.valorAtingidoMeta = valorAtigidoMeta;
     }
 
     public boolean alcancouMeta(){
-        return getValorMeta() <= getValorAtigidoMeta();
+        return getValorMeta() <= getValorAtingidoMeta();
     }
 }

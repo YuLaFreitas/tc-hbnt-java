@@ -18,13 +18,13 @@ public class Gerente extends Empregado{
     }
 
     public double calcularSalarioTotal(Departamento departamentoEngenharia) {
-        return getSalarioFixo() + calcularBonus(departamentoEngenharia);
+        return calcularBonus(departamentoEngenharia) + getSalarioFixo();
     }
 
     @Override
     public double calcularBonus(Departamento departamentoEngenharia) {
         if (departamentoEngenharia.alcancouMeta()){
-            return salarioFixo* 0.20;
+            return salarioFixo * 0.20 + (0.01 * (departamentoEngenharia.getValorAtingidoMeta() - departamentoEngenharia.getValorMeta()));
         }else {
             return 0;
         }
