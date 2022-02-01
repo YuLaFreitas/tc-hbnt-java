@@ -1,6 +1,5 @@
 public class Gerente extends Empregado{
 
-
     public double salarioFixo;
 
     public Gerente(double salarioFixo) {
