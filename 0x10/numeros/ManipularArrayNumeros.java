@@ -10,17 +10,14 @@ public class ManipularArrayNumeros {
         int pos = buscarPosicaoNumero(numeros, i);
                 if (pos != -1) {
                     throw new IllegalArgumentException("Numero jah contido na lista");
-
                 }
         numeros.add(i);
-
     }
 
     public static void removerNumero(List<Integer> numeros, int i){
         int pos = buscarPosicaoNumero(numeros, i);
         if ( pos == -1) {
             throw new IllegalArgumentException("Numero nao encontrado na lista");
-
         }
             numeros.remove(pos);
 

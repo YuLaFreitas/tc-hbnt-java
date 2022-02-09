@@ -34,8 +34,8 @@ public class ListaTodo {
         for (Tarefa tarefa : tarefas) {
             isFeito = tarefa.isEstahFeita() ? "x" : " ";
 
-            System.out.println("["+isFeito+"]  id: " +tarefa.getDescricao()+
-                    " - Descricao: Tarefa "+tarefa.getIdentificado());
+            System.out.println("["+isFeito+"]  id: " + tarefa.getIdentificado()+
+                    " - Descricao: "+tarefa.getDescricao());
         }
     }
 

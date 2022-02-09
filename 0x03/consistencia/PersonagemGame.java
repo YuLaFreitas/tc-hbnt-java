@@ -3,15 +3,13 @@ public class PersonagemGame  {
     private int SaudeAtual;
     private String status;
 
-    public PersonagemGame(int saudeAtual, String nome) {
-        //this.SaudeAtual = saudeAtual;
-        //this.nome = nome;
+    public void tomarDano(int quantidadeDeDano){
+
+        public PersonagemGame(int saudeAtual, String nome) {
         setSaudeAtual(saudeAtual);
         setNome(nome);
+        }
 
-    }
-
-    public void tomarDano(int quantidadeDeDano){
 
         int vida = this.SaudeAtual - quantidadeDeDano;
 
@@ -40,18 +38,8 @@ public class PersonagemGame  {
     }
 
     public void setSaudeAtual(int saudeAtual) {
-
-        //try {
             this.SaudeAtual = !(saudeAtual >= 0) ? 0 : saudeAtual;
-
-        //}catch (NullPointerException e){
-            //this.SaudeAtual = 0;
-          //  this.status = "morto";
-
-       // }finally {
             status =  this.SaudeAtual > 0 ? "vivo" : "morto" ;
-        //}
-
 
     }
 }
