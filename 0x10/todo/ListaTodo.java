@@ -32,9 +32,9 @@ public class ListaTodo {
     public void listarTarefas(){
         String isFeito;
         for (Tarefa tarefa : tarefas) {
-            isFeito = tarefa.isEstahFeita() ? "x" : " ";
+            isFeito = tarefa.isEstahFeita() ? "X" : " ";
 
-            System.out.println("["+isFeito+"]  id: " + tarefa.getIdentificado()+
+            System.out.println("["+isFeito+"]  Id: " + tarefa.getIdentificado()+
                     " - Descricao: "+tarefa.getDescricao());
         }
     }
