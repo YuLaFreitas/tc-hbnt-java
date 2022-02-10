@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Celular {
-    ArrayList<Contato>  contatoes = new ArrayList<>();
+    ArrayList<Contato> contatoes = new ArrayList<>();
     public Celular(){    }
 
     public Celular(ArrayList<Contato> contatoList){
