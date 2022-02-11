@@ -73,7 +73,7 @@ public class Banco {
 
             sb0.append("Cliente: ");
             sb0.append(cliente.getNomeCl());
-            sb0.append(String.format("  [%d] ", index + 1));
+            sb0.append(String.format(" [%d]", index + 1));
 
             System.out.println(sb0);
             if(ehImprimir) {
@@ -82,7 +82,7 @@ public class Banco {
 
                     sb1.append(String.format("  [%d] ", i+1));
 
-                    sb1.append(" valor: ");
+                    sb1.append("valor ");
                     sb1.append(String.format("%.2f", cliente.getTransacoes().get(i)));
 
                     System.out.println(sb1);
