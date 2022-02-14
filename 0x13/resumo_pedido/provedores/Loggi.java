@@ -8,8 +8,8 @@ public class Loggi implements ProvedorFrete{
     @Override
     public Frete calcularFrete(double peso, double valor) {
 
-            if(peso <= 1000) {
-                return new Frete(valorPedidoPorCem(valor, 0.05), obterTipoProverFrete());
+            if(peso <= 5000) {
+                return new Frete(valorPedidoPorCem(valor, 0.04), obterTipoProverFrete());
             }else {
                 return new Frete(valorPedidoPorCem(valor, 0.12), obterTipoProverFrete());
             }
