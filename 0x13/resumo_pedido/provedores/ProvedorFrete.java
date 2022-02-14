@@ -1,7 +1,7 @@
 package provedores;
 
 public interface ProvedorFrete{
-    public TipoProvedorFrete obterTipoProverFrete();
+    public TipoProvedorFrete obterTipoProvedorFrete();
     public Frete calcularFrete(double peso, double valor);
 
 }

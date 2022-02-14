@@ -17,11 +17,4 @@ public class Frete {
         return tipoProvedorFrete;
     }
 
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
-
-    public void setTipoProvedorFrete(TipoProvedorFrete tipoProvedorFrete) {
-        this.tipoProvedorFrete = tipoProvedorFrete;
-    }
 }
