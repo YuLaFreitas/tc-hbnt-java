@@ -26,8 +26,8 @@ public class Telefone{
     public int hashCode() {
         final int prime = 31;
         int result = 7;
-        result = prime * result + ((codigoArea == null) ? 0 : numero.hashCode());
-        result = prime * result + ((codigoArea == null) ? 0 : numero.hashCode());
+        result = prime * result + ((codigoArea == null) ? 0 : codigoArea.hashCode());
+        result = prime * result + ((numero == null) ? 0 : numero.hashCode());
         return result;
     }
 
