@@ -2,11 +2,9 @@ import java.util.*;
 
 public class Blog {
 
-    ArrayList<Post> postagens;
+    List<Post> postagens;
     Set<String> postSet;
     Map<String, Integer> postMap;
-    int contador = 1;
-
     public Blog(){
         postagens = new ArrayList<Post>();
     }
@@ -16,7 +14,7 @@ public class Blog {
     }
 
     public Set<String> obterTodosAutores() {
-        postSet = new LinkedHashSet<>();
+        postSet = new TreeSet<>();
         for(Post post : postagens){
             postSet.add(post.getAutor());
         }
@@ -24,27 +22,29 @@ public class Blog {
     }
 
     public Map<String, Integer> obterContagemPorCategoria() {
-        Set<String> postList = new HashSet<>();
-
-        postMap = new HashMap<>();
+        postSet = new TreeSet<>();
+        postMap = new TreeMap<String, Integer>();
 
         for(Post post : postagens){
-            postMap.put(post.categoria, contador);
-
-            if(!postList.add(post.getCategoria())){
+            String categoria = post.getCategoria();
+            if(postMap.containsKey(categoria)) {
+                int contador = postMap.get(categoria) ;
                 contador++;
+                postMap.put(categoria, contador);
+            }else {
+                postMap.put(categoria, 1);
+
             }
         }
-
         return postMap;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Blog)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Blog blog = (Blog) o;
-        return contador == blog.contador && Objects.equals(postagens, blog.postagens) && Objects.equals(postSet, blog.postSet) && Objects.equals(postMap, blog.postMap);
+        return Objects.equals(postagens, blog.postagens) && Objects.equals(postSet, blog.postSet) && Objects.equals(postMap, blog.postMap);
     }
 
     @Override
