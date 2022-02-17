@@ -1,12 +1,10 @@
 import java.util.*;
 
 public class Blog {
-    List<Post> posts;
+    private List<Post> posts = new ArrayList<Post>();
+
     Set<String> postSet;
     Map<String, Integer> postMap;
-    public Blog(){
-        posts = new ArrayList<Post>();
-    }
 
     public void adicionarPostagem(Post post) {
         posts.add(post);
