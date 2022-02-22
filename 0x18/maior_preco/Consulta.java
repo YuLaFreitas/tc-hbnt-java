@@ -6,7 +6,8 @@ public class Consulta {
 
     public static List<Produto> obterProdutosPorPrecoMinimo  (List<Produto> produtos, double precoMinimo){
                 return produtos.stream()
-                .sorted(Comparator.comparing(Produto::getPreco).reversed())
+                        .filter(min -> min.getPreco() >= precoMinimo)
+                .sorted(Comparator.comparing(Produto::getPreco))
                         .collect(Collectors.toList());
     }
 
