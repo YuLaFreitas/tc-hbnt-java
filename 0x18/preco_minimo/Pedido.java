@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
-public class Pedido {
+public class Pedido{
     private final int  codigo;
     private List<Produto> produtos;
     private final Cliente clientes;
@@ -29,7 +30,7 @@ public class Pedido {
     public int hashCode() {
         final int prime = 31;
         int result = 7;
-        result = prime * result + ((codigo == 0.0) ? 0 : codigo);
+        result = prime * result + (codigo);
         result = prime * result + ((produtos == null) ? 0 : produtos.hashCode());
         result = prime * result + ((clientes == null) ? 0 : clientes.hashCode());
         return result;

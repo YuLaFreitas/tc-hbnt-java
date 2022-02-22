@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Produto {
+public class Produto{
     private int  codigo;
     private String nome;
     private CategoriaProduto categoria;
@@ -37,6 +37,7 @@ public class Produto {
         return preco;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -54,4 +55,5 @@ public class Produto {
         result = prime * result + ((categoria == null) ? 0 : categoria.hashCode());
         return result;
     }
+
 }

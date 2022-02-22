@@ -1,5 +1,6 @@
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class Consulta {
@@ -7,7 +8,6 @@ public class Consulta {
     public static List<Produto> obterProdutosPorPrecoMinimo  (List<Produto> produtos, double precoMinimo){
                 return produtos.stream()
                         .filter(min -> min.getPreco() >= precoMinimo)
-                .sorted(Comparator.comparing(Produto::getPreco))
                         .collect(Collectors.toList());
     }
 
@@ -24,5 +24,7 @@ public class Consulta {
                 .collect(Collectors.toList());
 
     }
+
+
 
 }
