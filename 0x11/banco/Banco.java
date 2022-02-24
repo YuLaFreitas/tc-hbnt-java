@@ -5,14 +5,11 @@ public class Banco {
     private ArrayList<Agencia> agencias;
     Agencia ag;
 
-    public  Banco(){
-    }
-
     public Banco(String banco){
         agencias = new ArrayList<Agencia>();
-
         this.nomeBa = banco;
     }
+
     public boolean adicionarAgencia(String nomeAg) {
         ag = buscarAgencia(nomeAg);
         if(ag != null){
@@ -54,9 +51,6 @@ public class Banco {
            return true;
     }
 
-
-
-
     public boolean listarClientes(String nomeAg, boolean ehImprimir) {
         ag = buscarAgencia(nomeAg);
         StringBuffer sb0;
@@ -81,7 +75,6 @@ public class Banco {
                     sb1 = new StringBuffer();
 
                     sb1.append(String.format("  [%d] ", i+1));
-
                     sb1.append("valor ");
                     sb1.append(String.format("%.2f", cliente.getTransacoes().get(i)));
 
@@ -89,8 +82,6 @@ public class Banco {
                 }
             }
         }
-
         return true;
-
     }
 }

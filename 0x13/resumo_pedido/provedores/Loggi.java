@@ -1,10 +1,13 @@
 package provedores;
 
 public class Loggi implements ProvedorFrete{
+    private static final TipoProvedorFrete tipoProvedorFrete = TipoProvedorFrete.LOGGI;
+
     @Override
     public TipoProvedorFrete obterTipoProvedorFrete() {
-        return TipoProvedorFrete.LOGGI;
+        return tipoProvedorFrete;
     }
+
     @Override
     public Frete calcularFrete(double peso, double valor) {
 

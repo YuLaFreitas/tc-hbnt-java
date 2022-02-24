@@ -1,14 +1,8 @@
-public class Domestico extends Item {
+public class Domestico implements Item {
 
-    public Domestico(String nome, double preco, double quantidade, String unidade){
-        setNome(nome);
-        setPreco(preco);
-        setQuantidade(quantidade);
-        setUnidade(unidade);
-    }
 
     @Override
     public void comprar(){
-
+        System.out.println("OIIIIIII");
     }
 }

@@ -3,9 +3,9 @@ import java.util.List;
 import java.util.Objects;
 
 public class Pedido {
-    private final int  codigo;
+    private int  codigo;
     private List<Produto> produtos;
-    private final Cliente clientes;
+    private Cliente clientes;
 
     public Pedido(int codigo, List<Produto> produtos, Cliente clientes) {
         this.codigo = codigo;

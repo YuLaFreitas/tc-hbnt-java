@@ -4,7 +4,6 @@ public class Cliente {
     private String nome;
     private ArrayList<Double> transacoes ;
 
-    public Cliente(){    }
 
     public Cliente(String nomeCl, double valor){
         this.nome = nomeCl;
@@ -18,8 +17,6 @@ public class Cliente {
     }
 
     public ArrayList<Double> getTransacoes() {
-       // transacoes = new ArrayList<Double>();
-
         return transacoes;
     }
 

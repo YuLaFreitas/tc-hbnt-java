@@ -5,9 +5,6 @@ public class Agencia {
     private String nome;
     private ArrayList<Cliente> clientes;
 
-    public Agencia(){
-
-    }
 
     public Agencia(String nome){
         this.nome = nome;
