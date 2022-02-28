@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Biblioteca<E>{
+public class Biblioteca<E> extends Midia{
     public List<E> getLista() {
         return lista;
     }
@@ -9,7 +9,8 @@ public class Biblioteca<E>{
     private List<E> lista;
 
     public Biblioteca() {
-            lista = new ArrayList<>();
+        super(Class.class.getName());
+        lista = new ArrayList<>();
             }
 
     public void adicionarMidia(E e){
