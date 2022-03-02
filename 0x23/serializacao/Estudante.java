@@ -14,9 +14,9 @@ public class Estudante implements Serializable {
 
     @Override
     public String toString() {
-        return "Estudante{" +
+        return "Estudante { " +
                 "nome='" + getNome() + "', idade='" + getIdade() + "', senha='" + getSenha()
-                +"'}";
+                +"' }";
     }
 
     public String getNome() {
