@@ -1,5 +1,9 @@
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.stream.Collectors;
 
 public class SerializarEstudantes<Estudante> {
     private String nomeArquivo;
@@ -9,6 +13,7 @@ public class SerializarEstudantes<Estudante> {
     }
 
     public void serializar(List<Estudante> estudantes) {
+
             FileOutputStream fis = null;
             ObjectOutputStream obj = null;
             try {
@@ -41,9 +46,7 @@ public class SerializarEstudantes<Estudante> {
             try{
                 fis = new FileInputStream(nomeArquivo);
                 obj = new ObjectInputStream(fis);
-
                 return (List<Estudante>) obj.readObject();
-
             } catch (ClassNotFoundException | NullPointerException | IOException e) {
                 System.out.println("Nao foi possivel desserializar");
             }
