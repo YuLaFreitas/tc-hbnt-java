@@ -47,7 +47,7 @@ public class SerializarEstudantes<Estudante> {
                 return (List<Estudante>) obj.readObject();
 
             } catch (ClassNotFoundException | NullPointerException | IOException e) {
-                System.out.println("Nao foi possivel deserializar");
+                System.out.println("Nao foi possivel desserializar");
             }
         return null;
     }
