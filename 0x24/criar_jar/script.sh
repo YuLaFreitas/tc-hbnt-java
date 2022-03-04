@@ -1,8 +1,7 @@
-#!/bin/bash
-
+#!/bin/sh
 mkdir build
 cd com/holbertonschool/matematica
 javac -d ../../../build Aritmeticos.java
 cd ../../..
 cd build
-jar -cf Aritmeticos.jar Aritmeticos.class
+jar -cf Matematica.jar Aritmeticos.class
