@@ -1,2 +1,2 @@
 #!/bin/bash
-jar cvmf MANIFEST.MF com/Executavel.jar
+jar -cvmf MANIFEST.MF com/Executavel.jar
